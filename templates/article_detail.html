@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %} 
+   
+    <h3>{{ object.title }}</h3>
+    <p>{{ object.body }}</p>
+    <p>{{ object.author }} | {{ object.date }}</p>
+
+    <a href="{% url 'article_list' %}">Article List</a> 
+
+{% endblock content %}
